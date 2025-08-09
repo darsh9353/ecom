@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product" data-id="1" data-name="Product 1" data-price="10">
+            <img src="images/product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>$10</p>
+            <button onclick="addToCart(1, 'Product 1', 10)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="2" data-name="Product 2" data-price="15">
+            <img src="images/product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>$15</p>
+            <button onclick="addToCart(2, 'Product 2', 15)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
